@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="in">
+  <head>
+    <meta charset="UTF-8" />
+    <title>form input siswa</title>
+    <link rel="stylesheet" href="cbaa.css" />
+  </head>
+
+  <body>
+  <div class="border">
+    <h1>Form Input Nilai Siswa</h1>
+    <h3>silahkan masukan data anda dan nilai anda</h3>
+    <div class="colum">
+      <form name="formnilai" id="formulir"">
+        <label for="nomor"> NIS:</label>
+        <input type="number" id="nomor" required minlength="8"/><br /><br />
+        
+        <label for="name">Nama:</label>
+        <input type="text" id="name" required /><br /><br />
+
+        <label for="kelas">Kelas:</label>
+        <select id="kelas" required>
+          value="10"
+          <option value="10" hidden>plih kelas anda yang sesuai</option>
+          <option value="X">X/10</option>
+          <option value="XI">XI/11</option>
+          <option value="XII">XII/12</option></select
+        ><br /><br />
+
+        <label for="jurusan">Jurusan:</label>
+        <select id="jurusan" required>
+          value="10"
+          <option value="10" hidden>pilih jurusan anda yang sesuai</option>
+          <option value="RPL">RPL</option>
+          <option value="TJKT">TJKT</option>
+          <option value="DKV">DKV</option>
+          <option value="TBSM">TBSM</option>
+          <option value="KLN">KULNER</option>
+          <option value="AK">AKUNTANSI</option>
+          <option value="BD">BISNIS DIGITAL</option>
+          <option value="MP">MANAJEMEN PERKANTORAN</option></select
+        ><br /><br />
+
+        <label for="mapel">Mata Pelajaran:</label>
+        <input type="text" id="mapel" required/><br /><br />
+
+        <label for="gupel">Guru Mapel:</label>
+        <input type="text" id="gupel" required/><br /><br />
+
+        <label for="semester">Semester:</label>
+        <select id="semester" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option></select
+        ><br /><br />
+
+        <label for="tahun">Tahun Ajaran:</label>
+        <select id="tahun" required>
+          <option value="2022-2023">2022-2023</option>
+          <option value="2023-2024">2023-2024</option>
+          <option value="2024-2025">2024-2025</option></select
+        ><br /><br />
+      </form>
+
+
+
+      <form>
+        <label for="nilai1">Nilai Absen:</label>
+        <input type="number" id="nilai1" required /><br /><br />
+        <label for="nilai2">Nilai Kuis:</label>
+        <input type="number" id="nilai2" required /><br /><br />
+        <label for="nilai3">Nilai Tugas:</label>
+        <input type="number" id="nilai3" required /><br /><br />
+        <label for="nilai4">Nilai STS:</label>
+        <input type="number" id="nilai4" required /><br /><br />
+        <label for="nilai5">Nilai SAS:</label>
+        <input type="number" id="nilai5" required /><br /><br />
+        <center>
+          <button onclick="hitungRataRata()">Hitung Rata-Rata</button
+          ><br /><br />
+        </center>
+        <p></p>
+          <label for="ratarata">tulis rata rata kamu:</label>
+          <input type="number"><br><br>
+        </form>
+
+      <p id="hasil"></p>
+    </div>
+
+    <center>
+      <form>
+        Keterangan:
+        <input type="text" class="ket" />
+      </form>
+
+      <p>
+        <button id="klik" onclick="submit()">Submit</button>
+      </p>
+    </center>
+    <script src="main.js"></script>  
+   </div>
+  </body>
+</html>

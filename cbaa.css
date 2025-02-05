@@ -1,0 +1,88 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 120px;
+}
+
+.NA {
+  padding-left: 300px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(black-white-painting-mountain-landscape-with-trees-mountains-background_927978-3145.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+option {
+  border-radius: 20px;
+}
+
+.colum form {
+  display: flex;
+  flex-direction: column;
+}
+
+.colum {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+input {
+  border-radius: 20px;
+  height: 35px;
+  background: transparent;
+  backdrop-filter: blur(100px);
+  color: black;
+  font-weight: bolder;
+}
+
+.ket {
+  width: 600px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+button {
+  border-radius: 20px;
+  width: 120px;
+  height: 50px;
+  background: transparent;
+  background-color: grey;
+}
+
+button:hover {
+  background-color: transparent;
+}
+
+select {
+  border-radius: 20px;
+  height: 40px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  background:transparent ;
+  backdrop-filter: blur(120px);
+  font-weight: bolder;
+}
+
+h3 {
+  color: rgb(198, 198, 198);
+  margin: 0 0 30px;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-left: 150px;
+}
+
+.border{
+  width:600px;
+  background:transparent;
+  color: black;
+  border-radius:20px;
+  padding:30px 40px;
+  border: 2px solid ;
+  backdrop-filter: blur(35px);
+}
